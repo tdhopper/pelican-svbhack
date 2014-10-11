@@ -6,6 +6,8 @@ pelican-svbhack is a responsive theme for [Pelican](http://getpelican.com), it i
 
 You can see the [theme in action](http://www.giuliofidente.com/).
 
+![theme screenshot](https://raw.github.com/gfidente/pelican-svbhack/master/screenshot.png)
+
 ## FEATURES
 
 - responsive
@@ -20,19 +22,21 @@ You can see the [theme in action](http://www.giuliofidente.com/).
 
 ## INSTALL
 
-Clone the [repository](https://github.com/giulivo/pelican-svbhack), edit your `pelicanconf.py` and modify the `THEME` variable to make it point to the downloaded theme location.
+Clone the [repository](https://github.com/gfidente/pelican-svbhack), edit your `pelicanconf.py` and modify the `THEME` variable to make it point to the downloaded theme location.
 
 ## PELICANCONF.PY
 
 Supports a number of common global variables but patches are welcomed if you need better support.
 
-- `GOOGLE_ANALYTICS` your UA-XYZ code
+- `GOOGLE_ANALYTICS` to use Google Analytics, set this var to your UA-XYZ code
 
-- `USER_LOGO_URL` make this point to a page/face logo
+- `USER_LOGO_URL` to replace the logo placeholder, put your logo in content/images/your_logo.png and make this var point to `SITEURL + '/static/images/your_logo.png'`
+
+- `DISQUS_SITENAME` set this to your Disqus sitename to enable disqus comments in articles
 
 - `TAGLINE` some text rendered right below the logo
 
-- `INTERNET_DEFENSE_LEAGUE` set to `True` if you want to enable the [Internet Defense League](http://internetdefenseleague.org) code
+- `INTERNET_DEFENSE_LEAGUE` set this to `True` if you want to enable the [Internet Defense League](http://internetdefenseleague.org) code
 
 When developing locally, you may want to set the following variable: `SITEURL = http://localhost:8000`
 
